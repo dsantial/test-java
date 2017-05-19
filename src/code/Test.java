@@ -4,30 +4,18 @@ package code;
  * Created by 390767 on 17-4-12.
  */
 class A {
-    public String show(D obj){
-        return ("A and D");
-    }
-    public String show(A obj){
-        return ("A and A ");
-    }
+    public String show(D obj){  return ("A and D "); }
+    public String show(A obj){  return ("A and A ");}
 }
 
 class B extends A{
-    public String show(B obj){
-        return ("B and B");
-    }
-    public String show(A obj){
-        return ("B and A");
-    }
+    public String show(B obj){  return ("B and B"); }
+    public String show(A obj){  return ("B and A"); }
 }
 
-class C extends B{
+class C extends B{}
 
-}
-
-class D extends B{
-
-}
+class D extends B{}
 
 public class Test {
     public static void main(String[] args) {
