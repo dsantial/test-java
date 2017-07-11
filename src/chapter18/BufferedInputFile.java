@@ -7,7 +7,7 @@ import java.io.IOException;
 /**
  * Created by 390767 on 17-6-22.
  */
-public class BufferedInputFile {
+public class  BufferedInputFile {
     //Throw exceptions to console;
 
     public static String read(String filename) throws IOException{
