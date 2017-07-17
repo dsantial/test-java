@@ -1,4 +1,4 @@
-package Chapter3;
+package chapter3;
 
 /**
  * Created by danny on 2017/3/31.

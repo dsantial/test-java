@@ -1,4 +1,4 @@
-package Chapter3;
+package chapter3;
 import java.util.*;
 import static net.mindview.util.Print.*;
 
@@ -20,5 +20,7 @@ public class Bool {
         print(" i != j is " + (i != j));
 
 
+        long currentTime = System.nanoTime();
+        print(currentTime);
     }
 }

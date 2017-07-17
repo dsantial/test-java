@@ -1,5 +1,4 @@
-package Chapter3;
-import net.mindview.util.Print.*;
+package chapter3;
 
 import static net.mindview.util.Print.print;
 
