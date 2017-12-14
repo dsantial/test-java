@@ -1,6 +1,6 @@
 package propFile
 
-import java.io.{BufferedReader, FileInputStream, InputStreamReader}
+import java.io.{BufferedReader, File, FileInputStream, InputStreamReader}
 import java.util.Properties
 
 import scala.io.Source
@@ -39,6 +39,18 @@ println(readProFile("中国"))
     props.load(bf)
     props.getProperty(key)
 
+  }
+  def getRootFileFirstThenResourceFile(key:String):String={
+
+    val filePath=System.getProperty("user.dir")+"/conf.properties"
+    val configFile=new File(filePath)
+
+    val result= if (configFile.exists()){
+      readProFile(key)
+    }else{
+      getValue(key)
+    }
+    result
   }
 
 }
